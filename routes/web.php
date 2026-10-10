@@ -4,7 +4,18 @@ use App\Http\Controllers\DashboardController;
 use App\Http\Controllers\Teams\TeamInvitationController;
 use App\Http\Middleware\EnsureTeamMembership;
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\BookController;
 
+Route::view('/', 'home')->name('home');
+Route::resource('books', BookController::class);
+
+
+Route::get('/books', [BookController::class, 'index'])
+    ->name('books.index');
+
+Route::get('/books/{id}', [BookController::class, 'show'])
+    ->whereNumber('id')
+    ->name('books.show');
 
 
 Route::view('/profil-kelas', 'profil-kelas')

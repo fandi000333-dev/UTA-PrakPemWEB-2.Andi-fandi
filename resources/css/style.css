@@ -1,0 +1,41 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body{
+
+    background-color: aqua;
+    text-decoration: none;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    max-width: 1600px;
+}
+
+.judul-1{
+    margin-left: 400px;
+}
+
+
+
+/* Membuat tabel lebih lebar dan berjarak */
+table {
+    width: 150%;               /* Mengatur lebar tabel (bisa ganti ke 100% atau 800px) */
+    margin: 20px auto;        /* Memposisikan tabel tepat di tengah */
+    border-collapse: collapse; /* Merapikan garis tepi tabel */
+    font-size: 16px;          /* Memperbesar ukuran tulisan */
+}
+
+/* Memperbesar ruang di dalam sel header & baris data */
+th, td {
+    padding: 12px 15px;       /* Memberi jarak atas-bawah & kiri-kanan agar tabel tidak padat */
+    text-align: center;
+}
+
+/* Opsional: Membuat header tabel lebih tinggi dan berwarna */
+th {
+    background-color: #e0e0e0;
+    font-weight: bold;
+}
